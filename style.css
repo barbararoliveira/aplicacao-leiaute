@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Goudy+Bookletter+1911&family=Playball&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@900&display=swap');
 .hg-conteudo {
-    background-color: silver;
+    background-color: rgba(134, 26, 111, 0.445);
+    display: flex;
+    flex-flow: column;
 }
 
 .hg-conteudo > main {
-    background-color: #aaa;
+    background-color: rgb(0, 0, 0);
+    flex: 1;
 }
 
 body {
@@ -12,6 +17,16 @@ body {
     min-height: 100vh;
     display: flex;
     flex-flow: column;
+    font-family: 'Grenze Gotisch', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    background-size: contain;
+    background-position: left;
+    background-color: rgba(255, 167, 67, 0.589);
+}
+
+header {
+    display: block;
 }
 
 .hg-conteudo {
@@ -22,19 +37,69 @@ body {
 
 .hg-conteudo > nav {
     order: -1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    flex: 00 200px;
+}
+
+nav{
+    display: block;
+}
+
+#inicio{
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Grenze Gotisch', sans-serif;
+    padding: 10px;
+    font-size: 2rem;
 }
 
 .hg-conteudo > main {
     flex: 1;
+    background-image: url(fundo.jpeg);
 }
 
 @media (min-width: 768px) {
-    .hg-conteudo {
+    .hg-conteudo  {
         flex-flow: row;
     }
 
-    .hg-conteudo > aside,
-    .hg-conteudo > nav {
-        flex: 0 0 200px;
-    }
+h1{
+    color: rgb(0, 0, 0);
+    font-family: 'Goudy Bookletter 1911', sans-serif;
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+}
+
+.wiki{
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    margin-left: 25px;
+    max-width: 100%;
+}
+
+#dev{
+    padding: 20px;
+    width: 200px;
+    height: 80px;
+    border-radius: 10%;
+    max-width: 100%;
+}
+
+#etec{
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    margin-left: 25px;
+    max-width: 100%;
+}
+ 
 }
